@@ -1,115 +1,181 @@
 /* * * * * * * * * * * * * * * * * * * * *
 General
 * * * * * * * * * * * * * * * * * * * * */
-
 .wrapper {
-    /* width: 80%; */
-    background: red;
-    margin: 20;
-    /* max-width: 1000px; */
-  }
-  
-  /* h1 {
-      font-family: 'Roboto', sans-serif;
-  } */
-  
-  
-  
-  
-  
-  
-  
-  /* * * * * * * * * * * * * * * * * * * * *
-  Header
-  * * * * * * * * * * * * * * * * * * * * */
-  header {
-      height: 200px;
-      /* background: #ffffff; */
-      background: white;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
 
-  }
-  
-  header .container {
-      display: block;
-  
-  }
-  
-  .logo {
-      width: 100px;
-      color: #254454;
-      /* color: #542e25; */
-      margin: 0 auto;
-  }
-  
-  .logo span {
-      margin-left: 10px;
-  }
-  
-  header ul {
-      margin-bottom: 0;
-      display: flex;
-
-  }
-  
-  header ul li {
-      list-style: none;
+/* * * * * * * * * * * * * * * * * * * * *
+Header
+* * * * * * * * * * * * * * * * * * * * */
+header {
+    height: 80px;
+    background: white;
+    display: flex;
     align-items: center;
-  }
-  
-  header ul li a {
-    font-family: 'Open Sans Condensed', sans-serif;
-      height: 66px;
-      font-size: 26px;
-      /* padding: 0 20px; */
-      display: flex;
-      align-items: center;
-      text-transform: uppercase;
-      /* color: #254454; */
-      color: #542e25;
+}
 
+.logo {
+    width: 50%;
+    color: #BF1932;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
   }
   
-  header ul li a:hover {
-      background: #543a25;;
-      text-decoration: none;
-      /* font-weight: bold; */
-      /* color: #254454; */
-      /* color: #543a25; */
-  }
-  
-  
-  /* * * * * * * * * * * * * * * * * * * * *
-  Hero
-  * * * * * * * * * * * * * * * * * * * * */
+.nav-links {
+    margin-bottom: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #1f1f1f;
+}
+
+.nav-links li a:hover {
+    color: #858585;
+    text-decoration: none;
+}
+
+.hamburger-icon {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #1f1f1f;
+}
+
+.hamburger-icon:hover {
+    color: #858585;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-icon {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Hero
+* * * * * * * * * * * * * * * * * * * * */
 .hero {
     width: 100%;
-    height: 300px;
-    background: #ddd;
+    height: 400px;
+    background: radial-gradient(rgba(0, 0, 0, 0.336),rgba(255, 255, 255, 0.438) ), url(https://images.unsplash.com/photo-1515510532701-5f751e184906?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=37e109f435fdd46757da104be11490f5&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    text-align: center;
 }
 
-img {
-    width: 100%;
+/* .hero-content {
+    color: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: bold; */
+    letter-spacing: 4px;
+    font-size: 42px;
+    color: white;
+    margin-bottom: 32px;
 }
-  
-  
-  
-  
-  /* * * * * * * * * * * * * * * * * * * * *
-  Main
-  * * * * * * * * * * * * * * * * * * * * */
-  main {
-      height: 400px;
-      padding: 80px 0;
-      background: rgb(240, 240, 240)
-  }
-  
-  
-  /* * * * * * * * * * * * * * * * * * * * *
-  Footer
-  * * * * * * * * * * * * * * * * * * * * */
-  footer {
-      height: 100px;
-      background: rgb(15, 15, 15);
-      color: white;
-      text-align: right;
-  }
+
+button {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: lowercase;
+    background: white;
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button:hover {
+    color: #BF1932;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Main
+* * * * * * * * * * * * * * * * * * * * */
+main {
+    height: 400px;
+    padding: 80px 0;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-one {
+    height: 400px;
+    width: 40%;
+    padding: 20px;
+}
+
+span {
+color: #BF1932;
+}
+
+.column-two {
+    background: #e7e7e7;
+    height: 400px;
+    width: 60%;
+    margin-top: 50px;
+    padding: 20px;
+    /* margin: 20px 20px; */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: thin;
+    letter-spacing: 2px;
+    font-size: 32px;
+    text-align: justify;
+    color: #535353;
+}
+
+main > p {
+    text-align: center;
+    color: rgb(43, 43, 43);
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * */
+footer {
+    /* height: 100px; */
+    background: #1f1f1f;
+    color: white;
+}
