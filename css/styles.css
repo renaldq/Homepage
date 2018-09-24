@@ -1,15 +1,16 @@
-/* * * * * * * * * * * * * * * * * * * * *
-General
-* * * * * * * * * * * * * * * * * * * * */
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+G E N E R A L
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
 .wrapper {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
 }
 
-/* * * * * * * * * * * * * * * * * * * * *
-Header
-* * * * * * * * * * * * * * * * * * * * */
+
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+H E A D E R
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
 header {
     height: 80px;
     background: white;
@@ -19,14 +20,15 @@ header {
 
 .logo {
     width: 50%;
-    color: #BF1932;
+    color: #b95655;
     display: flex;
     align-items: center;
     padding-left: 20px;
-  }
+}
   
 .nav-links {
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     width: 50%;
     display: flex;
     align-items: center;
@@ -39,13 +41,13 @@ header {
 
 .nav-links li a {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #1f1f1f;
+    text-decoration: none;
 }
 
 .nav-links li a:hover {
     color: #858585;
-    text-decoration: none;
 }
 
 .hamburger-icon {
@@ -73,13 +75,18 @@ header {
 }
 
 
-/* * * * * * * * * * * * * * * * * * * * *
-Hero
-* * * * * * * * * * * * * * * * * * * * */
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+H E R O
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
 .hero {
     width: 100%;
     height: 400px;
-    background: radial-gradient(rgba(0, 0, 0, 0.336),rgba(255, 255, 255, 0.438) ), url(https://images.unsplash.com/photo-1515510532701-5f751e184906?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=37e109f435fdd46757da104be11490f5&auto=format&fit=crop&w=1350&q=80);
+    background:
+        radial-gradient(
+            rgba(0, 0, 0, 0.527),
+            #f5f5f58c
+        ),
+        url(https://images.unsplash.com/photo-1515510532701-5f751e184906?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=37e109f435fdd46757da104be11490f5&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -90,17 +97,9 @@ Hero
     text-align: center;
 }
 
-/* .hero-content {
-    color: #171717;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 h1 {
     font-family: 'Montserrat', sans-serif;
-    /* font-weight: bold; */
+    font-weight: 400;
     letter-spacing: 4px;
     font-size: 42px;
     color: white;
@@ -109,73 +108,158 @@ h1 {
 
 button {
     font-family: 'Open Sans Condensed', sans-serif;
-    text-transform: lowercase;
     background: white;
     border: none;
     color: black;
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 button:hover {
-    color: #BF1932;
+    color: #b95655;
 }
 
 
-/* * * * * * * * * * * * * * * * * * * * *
-Main
-* * * * * * * * * * * * * * * * * * * * */
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+M A I N
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
 main {
-    height: 400px;
-    padding: 80px 0;
-    background: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.column-one {
-    height: 400px;
-    width: 40%;
-    padding: 20px;
-}
-
-span {
-color: #BF1932;
-}
-
-.column-two {
-    background: #e7e7e7;
-    height: 400px;
-    width: 60%;
-    margin-top: 50px;
-    padding: 20px;
-    /* margin: 20px 20px; */
+.h2-container {
+    width: 50%;
+    padding-right: 20px;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: thin;
+    font-family: 'Libre Baskerville', serif;
     letter-spacing: 2px;
-    font-size: 32px;
+    font-size: 36px;
     text-align: justify;
-    color: #535353;
+    color: #858585;
 }
 
-main > p {
-    text-align: center;
-    color: rgb(43, 43, 43);
+span {
+    color: #b95655;
+}
+
+.paragraph-container {
+    width: 50%;
+    border-left: solid;
+    border-left-width: thin;
+    padding-left: 20px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: justify;
+    color: #1f1f1f;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .h2-container {
+       width: 100%;
+    }
+
+    .paragraph-container {
+        width: 100%;
+        padding-left: 0;
+        border: none;
+        border-top: solid;
+        border-top-width: thin;
+    }
 }
 
 
-/* * * * * * * * * * * * * * * * * * * * *
-Footer
-* * * * * * * * * * * * * * * * * * * * */
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+F O O T E R
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
 footer {
-    /* height: 100px; */
-    background: #1f1f1f;
-    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(160deg, #efefef, #ffffff71);
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.company-and-legal-section {
+    width: 50%;
+    display: flex;
+    /* justify-content: space-between; */
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.company-section, .legal-section {
+    width: 200px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.social-media-section {
+    width: 50%;
+}
+
+.social-media-section ul {
+    /* color: #1f1f1f; */
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 40px;
+    color: #1f1f1f;
+}
+
+footer ul li a:hover {
+    color: #858585;
+}
+
+.social-icons a:hover {
+    color: #b95655;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .company-and-legal-section {
+        width: 100%;
+    }
+
+    .social-media-section {
+        width: 100%;
+        margin-left: 20px;
+    }
 }
